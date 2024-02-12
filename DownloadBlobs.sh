@@ -5,14 +5,13 @@
 Help()
 {
    # Display Help
-   echo "Add description of the script functions here."
    echo
-   echo "Syntax: scriptTemplate [-g|h|v|V]"
+   echo "Syntax: scriptTemplate [-h|p|k|s]"
    echo "options:"
-   echo "g     Print the GPL license notification."
    echo "h     Print this Help."
-   echo "v     Verbose mode."
-   echo "V     Print software version and exit."
+   echo "p     Enter the Project Id."
+   echo "k     Enter the Client Key."
+   echo "s     Enter the Client Secret."
    echo
 }
 
@@ -49,4 +48,4 @@ while getopts ":h:p:k:s:" option; do
 done
 
 
-echo "hello $ClientKey, $ClientSecret, $ProjectId!"
+echo "hello $ClientKey, $ClientSecret, $ProjectId"
